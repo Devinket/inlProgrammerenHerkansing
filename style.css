@@ -1,0 +1,43 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#sausKiezen img {
+    width: 100px;
+}
+
+#toppingsKiezen img {
+    width: 100px;
+}
+
+.weg {
+    display: none;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-rows: 33vh 33vh;
+    grid-template-columns: 100vw;
+    justify-items: center;
+}
+
+#pizza img {
+  position: absolute;
+}
+
+#pizza li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* kleine aanpassingen aan het pizzadeeg*/
+#pizza li:first-child img {
+    width: 450px;
+    margin-top: 5px;
+}

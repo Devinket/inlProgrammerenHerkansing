@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maak uw Pizza!</title>
+    <link rel="STYLESHEET" href="style.css" type="text/css">
+</head>
+<body>
+    <ul id="pizza">
+        <li><img src="./img/pizzadeeg.png" id="pizzadeeg"></li>
+        <li><img src="./img/kaas.png" id="kaas" class="weg"></li>
+        <li><img src="./img/groenten.png" id="groenten" class="weg"></li>
+        <li><img src="./img/ananas.png" id="ananas" class="weg"></li>
+        <li><img src="./img/pepperoni.png" id="pepperoni" class="weg"></li>
+    </ul>
+
+
+
+    <ul id="sausKiezen">
+        <li> <img src="./img/tomatensaus.png" id="tomatensaus"></li>
+        <li> <img src="./img/bbqsaus.png" id="bbqsaus"></li>
+        <li> <img src="./img/geen.png" id="geensaus"></li>
+        <li><button id="volgendeKnop">volgende</button></li>
+    </ul>
+
+    <ul id="toppingsKiezen" class="weg">
+        <li><button id="vorigeKnop">vorige</button></li>
+        <li> <img src="./img/kaasKnop.png" id="kaasKnop"></li>
+        <li> <img src="./img/groentenKnop.png" id="groentenKnop"></li>
+        <li> <img src="./img/ananasKnop.png" id="ananasKnop"></li>
+        <li> <img src="./img/pepperoniKnop.png" id="pepperoniKnop"></li>
+        <li><button id="Oven">In de oven</button></li>
+    </ul>
+
+
+        <!-- bron: herkansinglessen les 3 inleiding programmeren -->
+    <ul id="OvenLi" class="weg">
+        <li>
+            <div>
+                <label for="tijdmeter">In de oven:</label>
+                <meter
+                id="tijdmeter"
+                min="0"
+                max="10"
+                low="3"
+                high="6"
+                value="0"
+                optimum="8"
+                ></meter>
+                <output id="meterWaarde">0</output>
+
+                <output id="meterStatus">Wordt bereid</output>
+            </div>
+        </li>
+
+        <li>
+            <button id="skip">Skip wachten</button>
+        </li>
+    </ul>
+
+
+</body>
+
+
+<script src="./script/script.js"></script>
+<script src="./script/oven.js"></script>
+</html>
