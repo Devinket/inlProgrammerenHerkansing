@@ -60,7 +60,33 @@ function updateStatus(value) {
     } else {
         meterStatus.textContent = "Je pizza is klaar!";
     }
+
+    // trigger confetti als het 10 is
+    if (value === 10) {
+        startConfetti();
+    }
+    // omdat al een interval aanwezig is op de andere functie die deze functie aanroept komt er om de 2 seconde comfetti
 }
+
+// confetti
+function startConfetti() {
+    // simpele confetti explosie
+    confetti({
+        particleCount: 140,
+        spread: 120,
+        origin: { y: 0.6 },
+        colors: ['#ff0', '#f00', '#0f0', '#00f'],
+        gravity: 1,
+    });
+}
+
+
+// bron voor confetti: ChatGPT
+// https://chatgpt.com/share/695bccbd-459c-8005-a5f0-10f55425693b
+
+
+
+
 
 
 // Skip wachten knop
@@ -73,3 +99,20 @@ skipButton.addEventListener("click", function() {
   updateStatus(meterOven.value);
   meterWaarde.textContent = meterOven.value;
 })
+
+
+
+
+
+
+
+
+
+
+// reset knop
+
+const resetButton = document.getElementById("reset")
+
+resetButton.addEventListener("click", function() {
+    window.location.reload(); //reload de pagina
+}  )
