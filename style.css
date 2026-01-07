@@ -41,3 +41,66 @@ body {
     width: 450px;
     margin-top: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*indeling meter */
+
+#OvenLi {
+    padding-left: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#OvenLi li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.meter {
+    width: 180px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 120px fit-content;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.meter > label {
+    grid-column: 1 / span 2;
+}
+
+.meter > #meterStatus {
+    grid-column: 1 / span 2;
+}
+
+.meter meter {
+    width: 120px;
+    height: 25px;
+}
+
+
+#skip {
+    margin-top: 5%;
+}
