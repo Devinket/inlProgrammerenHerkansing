@@ -37,8 +37,8 @@
         <!-- bron: herkansinglessen les 3 inleiding programmeren -->
     <ul id="OvenLi" class="weg">
         <li>
-            <div>
-                <label for="tijdmeter">In de oven:</label>
+            <div class="meter">
+                <label for="tijdmeter">Zo ver is je pizza</label>
                 <meter
                 id="tijdmeter"
                 min="0"
@@ -52,10 +52,9 @@
 
                 <output id="meterStatus">Wordt bereid</output>
             </div>
-        </li>
-
-        <li>
+            
             <button id="skip">Skip wachten</button>
+            <button id="reset">Reset</button>
         </li>
     </ul>
 
@@ -65,4 +64,7 @@
 
 <script src="./script/script.js"></script>
 <script src="./script/oven.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </html>
