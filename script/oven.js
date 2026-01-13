@@ -70,19 +70,20 @@ function updateStatus(value) {
 
 // confetti
 function startConfetti() {
-    // simpele confetti explosie
+    // simpele confetti explosie.
     confetti({
-        particleCount: 140,
-        spread: 120,
-        origin: { y: 0.6 },
-        colors: ['#ff0', '#f00', '#0f0', '#00f'],
-        gravity: 1,
+        particleCount: 140, // hoeveel particles hij per keer afschiet
+        spread: 120, // hoe breed hij de particles af schiet
+        origin: { y: 0.6 }, // waar de particles vandaan komen
+        colors: ['#ff0', '#f00', '#0f0', '#00f'], // optioneel kan je de kleuren van de particles veranderen
+        gravity: 1, // hoe snel de particles vallen
     });
 }
 
 
 // bron voor confetti: ChatGPT
 // https://chatgpt.com/share/695bccbd-459c-8005-a5f0-10f55425693b
+// Wat hier gebeurd is dat hij een online script inlaad. Met bovenstaande code kan ik deze confetti aanpassen.
 
 
 
